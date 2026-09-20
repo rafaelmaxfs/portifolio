@@ -423,7 +423,6 @@ footer:hover{
     *{
         cursor: auto;
     }
-    #mim-maior:hover,
     .div-content:hover,
     footer:hover,
     #logo:hover,
@@ -534,6 +533,10 @@ footer:hover{
             }
         }
     }
+    #mim-maior:hover{
+        transform: scale(1.03);
+    }
+    
 
     #div-skills{
         width: 92%;
