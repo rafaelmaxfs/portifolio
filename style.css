@@ -5,6 +5,13 @@
     cursor: none;
 }
 
+@font-face{
+    font-family: 'TAN - HEADLINE';
+    src: url(fonts/tan-headline.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+
 :root{
     --font-jomhuria: "Jomhuria", serif; 
     --cor-fundo: #2B4242;
