@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cursor.js" defer></script>
+    <script src="modoEscuro.js" defer></script>
+    <script src="scroll.js" defer></script>
+    <script src="contato.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <canvas id="trail-canvas"></canvas>
+
+    <header>
+        <div id="head-maior">
+            <a href="#mim-maior" data-offset="150">SOBRE MIM</a>
+            <a href="#div-skills" data-offset="-15">SKILLS</a>
+            <a>PROJETOS</a>
+        </div>
+        <div id="alt-cor">
+            <input id="inp-cor" type="checkbox" onchange="altCores()">
+        </div>
+        <div id="div-contato">
+            <div id="head-menor" tabindex="0">
+                <h1><a>CONTATO</a></h1>
+            </div>
+            <div id="sombra">
+                <div id="div-contato-btn">
+                    <div>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafaelmaxfgs@gmail.com" target="_blank"><img src="img/Vector.png"></a>
+                        <a href="https://www.linkedin.com/in/rafaelmaxfs" target="_blank"><img src="img/Vector (1).png"></a>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/5531994988105" target="_blank"><img src="img/Vector (2).png"></a>
+                        <a href="https://github.com/rafaelmaxfs" target="_blank"><img src="img/Vector (3).png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <img src="img/logo clara.png" id="logo">
+
+    <div id="mim-maior">
+        <div id="mim-menor">
+            <div id="div-mim-content">
+
+                <div id="div-mim-txt">
+                    <h1>Quem sou eu? <br><br></h1>
+                    <p>Eu sou Rafael Max, tenho 17 anos e sou estudante do Cotemig Floresta. Meu interesse na tecnologia começou quando era mais novo, como um hobby, hoje procuro me aprimorar tecnicamente, tendo um bom conhecimento em linguagens como HTML, JS, SQL e C#. <br><br>
+Além da parte técnica, procuro sempre manter uma postura otimista e prestativa no dia a dia. Acredito que a boa comunicação é essencial em um bom ambiente de trabalho, tornando os grandes desafios possíveis de serem resolvidos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div-skills">
+        <h1>Quais são minhas habilidades?<br><br></h1>
+        <div id="div-grid">
+            <div id="div-content1" class="div-content">
+                <div><img src="img/html-5-logo-svgrepo-com 1.png"><img src="img/HTML.png"></div>
+                <p>Domínio de sistemas de layout modernos e posicionamento de elementos (CSS Grid, Flexbox, propriedades display como block, inline-block e elementos fixed). <br><br>
+
+                    Utilização estruturada de tags semânticas (header, main, footer, entre outras) para melhorar a acessibilidade, a legibilidade do código e o SEO da página. <br><br>
+                    
+                    Aplicação de pseudo-classes e pseudo-elementos para estilizar componentes de acordo com a interação do usuário e estados específicos dos elementos. <br><br>
+                    
+                    Criação de transições fluidas e aplicação de técnicas de estilização para enriquecer a experiência visual da interface. <br><br>
+                    
+                    Capacidade de escrever códigos limpos, modulares e focados na manutenibilidade e adaptação de layouts.</p>
+            </div>
+            <div id="div-content2" class="div-content">
+                <div><img src="img/javascript-icon~alt 1.png"></div>
+                <p>Lógica e Fundamentos de Programação: Domínio de variáveis, tipos de dados e operadores lógicos para a construção de uma base sólida em desenvolvimento de software. <br><br>
+
+                    Controle de Fluxo e Iteração: Utilização eficiente de estruturas condicionais e de repetição para o gerenciamento do fluxo de execução e automação de tarefas.<br><br>
+                    
+                    Manipulação do DOM (Document Object Model): Capacidade de interagir dinamicamente com a página web, alterando estruturas, conteúdos e estilos via código.<br><br>
+                    
+                    Gestão de Eventos e Dinamismo: Implementação de interações baseadas em ações do usuário (como cliques e entradas de dados) para enriquecer a experiência na interface.<br><br>
+                    
+                    Resolução de Algoritmos e Problemas Básicos: Aplicação prática dos conceitos fundamentais para criar scripts funcionais e resolver desafios lógicos essenciais.</p>
+            </div>
+            <div id="div-content3" class="div-content">
+                <div><img src="img/icons8-c-sharp-logo 1.png"></div>
+                <p>Fundamentos e Sintaxe de C#: Domínio da lógica essencial, tipagem e sintaxe da linguagem para a construção de códigos estruturados.<br><br>
+
+                    Controle de Fluxo e Iteração: Utilização eficiente de estruturas condicionais e de repetição para gerenciar a lógica de execução dos programas. <br><br>
+                    
+                    Desenvolvimento de Aplicações Desktop: Criação de interfaces gráficas funcionais para o sistema Windows utilizando Windows Forms. <br><br>
+                    
+                    Resolução de Algoritmos Básicos: Capacidade de traduzir problemas em soluções lógicas utilizando os conceitos fundamentais do C#. <br><br>
+                    
+                    Estruturação e Automação de Tarefas: Aplicação de conceitos fundamentais para escrever códigos orientados à resolução de problemas práticos.</p>
+            </div>
+            <div id="div-content4" class="div-content">
+                <div><img src="img/SQL.png"><img src="img/svgviewer-output 1.png"></div>
+                <p>Consultas e Recuperação de Dados: Domínio da construção de comandos de extração de informações utilizando a clásula SELECT e filtragem com WHERE.<br><br>
+
+                Relacionamentos e Junções: Capacidade de associar dados de múltiplas tabelas utilizando diferentes tipos de JOIN.<br><br>
+                
+                Agrupamento e Ordenação: Utilização eficiente de GROUP BY, HAVING e ORDER BY para organizar e refinar o conjunto de resultados.<br><br>
+                
+                Funções de Agregação: Aplicação de funções estatísticas e matemáticas como AVG, MAX, MIN e SUM para análise de dados.<br><br>
+                
+                Manipulação e Consulta de Bancos Relacionais: Compreensão sólida da lógica de banco de dados para estruturar consultas precisas e eficientes.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="content-footer">
+            <div>
+                <a href="https://github.com/rafaelmaxfs" target="_blank"><img src="img/footer git.png"></a>
+                <a href="https://www.instagram.com/rafaelmaxfs/" target="_blank"><img src="img/footer ig.png"></a>
+                <a href="https://wa.me/5531994988105" target="_blank"><img src="img/footer zap.png"></a>
+            </div>
+            <div>
+                <a><img src="img/footer loc.png"></a>
+                <a href="https://wa.me/5531994988105" target="_blank"><img src="img/footer mail.png"></a>
+                <a href="https://www.linkedin.com/in/rafaelmaxfs" target="_blank"><img src="img/footer lk.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
