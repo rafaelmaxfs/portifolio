@@ -16,21 +16,18 @@ function resizeCanvas(){
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
  
-// Barato: só guarda a posição e move o cursor via transform (GPU, sem layout).
-// Roda a cada mousemove, mas não mexe no array de pontos nem no canvas.
 let loopRunning = false;
  
 const hasHover = window.matchMedia('(hover: none)').matches === false;
  
 function onMouseMove(e){
-    if (!hasHover) return; // em touch, não faz sentido animar o rastro
+    if (!hasHover) return;
  
     mouseX = e.clientX;
     mouseY = e.clientY;
     hasNewSample = true;
     customCursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
  
-    // Se o loop tinha parado (mouse parado / sem rastro), acorda ele.
     if (!loopRunning) {
         loopRunning = true;
         requestAnimationFrame(drawTrail);
@@ -53,13 +50,11 @@ function getGradient(first, last) {
 }
  
 function drawTrail(now){
-    // Só 1 ponto novo por frame, não 1 por mousemove.
     if (hasNewSample) {
         points.push({ x: mouseX, y: mouseY, time: now });
         hasNewSample = false;
     }
  
-    // Remove pontos expirados do início sem recriar o array (menos GC).
     let expired = 0;
     while (expired < points.length && now - points[expired].time >= TRAIL_LIFETIME) {
         expired++;
@@ -95,8 +90,6 @@ function drawTrail(now){
         ctx.stroke();
     }
  
-    // Se não sobrou nenhum ponto e não chegou amostra nova neste frame,
-    // não há mais nada pra desenhar: para o loop até o próximo mousemove.
     if (points.length === 0 && !hasNewSample) {
         loopRunning = false;
         return;
