@@ -494,7 +494,7 @@ footer:hover::before{
     header{
         margin-top: 12px;
         width: 92%;
-        height: 48px;
+        height: 30px;
         top: 12px;
         #head-maior{
             width: auto;
@@ -504,8 +504,8 @@ footer:hover::before{
         }
         #alt-cor{
             left: 0;
-            height: 40px;
-            width: 40px;
+            height: 30px;
+            width: 30px;
             margin: auto 8px;
         }
         #div-contato{
@@ -558,7 +558,7 @@ footer:hover::before{
     }
 
     #logo{
-        width: 85%;
+        width: 70%;
         margin: 24px 0;
     }
 
